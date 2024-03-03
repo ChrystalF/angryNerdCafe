@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/AngryNerdCafe.css">
+<title>Angry Nerd Cafe - Contact</title>
+<meta charset="utf-8">
+</head>
+<body>
+<header class="content">
+ <a href="index.html"><h1>Angry Nerd Cafe</h1></a>
+</header>
+<nav>
+ <ul>
+  <li><a href="index.html">Home</a></li>  
+  <li><a href="about.html">About</a></li>  
+  <li><a href="menu.html">Menu</a></li>  
+  <li><a href="contact.html">Contact</a></li>
+ </ul>
+</nav>
+<div id="wrapper">
+<main>
+ <div id="contact"></div><br>
+ <h2>Contact us</h2><br>
+    <p>Fill out the form below to send us a message/question, or set up an event.
+      </p>
+       <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+         <label for="myName">Name:</label>
+           <input type="text" name="myName" id="myName" required>
+         <label for="myEmail">E-mail:</label>
+           <input type="email" name="myEmail" id="myEmail" required>
+         <label for="myOptions">Questions, comments or set up an event:</label>
+           <input type="text" name="myOptions" id="myOptions" list="options" required>
+             <datalist id="options">
+               <option value="Event" label="Event">
+               <option value="Message" label="Question">
+               <option value="Message" label="Comment">
+             </datalist>
+         <label for="myMessages">Message:</label>
+           <textarea name="myMessages" id="myMessages" rows="2" cols="20" required></textarea>
+            <input type="submit" value="Send" id="mySubmit">
+       </form>
+</main>
+<footer>
+  Copyright &copy; 2024 Angry Nerd Cafe<br>
+  <a href="mailto:emailAddress@emailService.com">emailAddress@emailService.com</a>
+</footer>
+</div>
+</body>
+</html>
